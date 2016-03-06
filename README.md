@@ -1,2 +1,2 @@
 # TW
-Technologie Współbierzne
+Technologie Współbieżne

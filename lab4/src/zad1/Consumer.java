@@ -9,9 +9,10 @@ public class Consumer implements Runnable {
 
     public void run() {
 
-        for (int i=0; i<11; i++) {
+        while( true ) {
             try {
-                System.out.format("MESSAGE RECEIVED: %s%n", buffer.take());
+                System.out.println("\t CONSUME!!");
+                buffer.consume();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

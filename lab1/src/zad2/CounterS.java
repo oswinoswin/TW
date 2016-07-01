@@ -1,5 +1,3 @@
-package WyscigS;
-
 public class CounterS {
     public int number = 0;
 

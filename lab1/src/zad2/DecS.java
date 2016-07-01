@@ -1,11 +1,9 @@
-package com.company;
-
 /**
  * Created by oswin on 02.03.16.
  */
-public class Dec implements Runnable {
-    public Counter licz;
-    public Dec(Counter licznik){
+public class DecS implements Runnable{
+    public CounterS licz;
+    public DecS(CounterS licznik){
         this.licz = licznik;
     }
     public void run() {

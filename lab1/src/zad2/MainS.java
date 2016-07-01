@@ -1,5 +1,3 @@
-package WyscigS;
-
 /**
  * Created by oswin on 02.03.16.
  */

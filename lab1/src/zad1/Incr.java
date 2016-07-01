@@ -1,4 +1,3 @@
-package com.company;
 public class Incr implements Runnable {
     public Counter licz;
     public Incr(Counter licznik){

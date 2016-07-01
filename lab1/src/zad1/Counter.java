@@ -1,7 +1,3 @@
-package com.company;
-/**
- * Created by student11 on 2016-03-01.
- */
 public class Counter {
     public int number=0;
 

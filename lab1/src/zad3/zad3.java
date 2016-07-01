@@ -12,7 +12,6 @@ public class zad3 {
         (new Thread(new Producer(buff))).start();
         (new Thread(new Consumer(buff))).start();
 
-
     }
 
     static void showThreadStatus(Thread thrd) {

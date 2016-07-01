@@ -9,7 +9,7 @@ public class Consumer implements Runnable {
 
     public void run() {
 
-        for (int i=0; i<10; i++) {
+        for (int i=0; i<11; i++) {
             System.out.format("MESSAGE RECEIVED: %s%n", buffer.take());
             try {
                 Thread.sleep(1000);

@@ -3,30 +3,29 @@ import java.util.*;
 public class Buffer {
 
     LinkedList<String> storage = new LinkedList<String>();
-    int available = -1;
+    boolean pusty = true;
 
     public synchronized String take() {
 
-        while (available < 0) {
+        while (pusty) {
             try {
                 wait();
             } catch (InterruptedException e) {}
         }
-
-        available --;
+        pusty = true;
         notifyAll();
         return storage.pollLast();
     }
 
     public synchronized void put(String message) {
 
-        while (available > 10) {
+        while (!pusty) {
             try {
                 wait();
             } catch (InterruptedException e) {}
         }
 
-        available ++;
+        pusty = false;
         storage.add(message);
         notifyAll();
     }
